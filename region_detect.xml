@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+  <name>Region Detector</name>
+  <author>Jookolas</author>
+  <authorEmail>owner@jookolas.ru</authorEmail>
+  <authorUrl>www.jookolas.ru</authorUrl>
+  <copyright>Copyright (c) 2013. All rights reserved.</copyright>
+  <creationDate>2013</creationDate>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>0.1</version>
+  <description>Детектор региона</description>
+  <files>
+    <filename plugin="region_detector">region_detector.php</filename>
+  </files>
+</install>
