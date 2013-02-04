@@ -25,8 +25,12 @@ class plgSystemRegion_detector extends JPlugin {
         $app = &JFactory::getApplication();
 
         $region = "Москва";
-        if (($result = $this->_get_region()) !== false)
+        if (isset($_COOKIE['user_region']))
+            $region = $_COOKIE['user_region'];
+        elseif (($result = $this->_get_region()) !== false) {
+            setcookie('user_region', $result, time() + 604800, "/");
             $region = $result;
+        }
 
         $app->set("JPLG_REGION_DETECTOR", $region);
 
